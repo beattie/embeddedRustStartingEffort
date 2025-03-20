@@ -1,9 +1,32 @@
 [default.probe]
+# USB vendor ID
+# usb_vid = "1337"
+# USB product ID
+# usb_pid = "1337"
+# Serial number
+# serial = "12345678"
+# The speed in kHz of the data link to the target.
+# speed = 1337
 protocol = "Swd"
 
 [default.general]
 chip = "nrf52833_xxAA" # micro:bit V2
 # chip = "STM32F303VCT6" # stm32F3-discovery (maybe)
+# Use this flag to assert the nreset & ntrst pins during attaching the probe to the chip.
+# connect_under_reset = false
+
+[default.reset]
+# Whether or not the target should be reset.
+# When flashing is enabled as well, the target will be reset after flashing regardless of this setting.
+enabled = true
+# Whether or not the target should be halted after reset.
+halt_afterwards = false
+
+[default.gdb]
+# Whether or not a GDB server should be opened after flashing.
+enabled = true
+# The connection string in host:port format wher the GDB server will open a socket.
+# gdb_connection_string = "127.0.0.1:1337"
 
 [default.rtt]
 enabled = true
