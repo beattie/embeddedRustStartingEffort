@@ -2,7 +2,7 @@
 authors = ["beattie <beattie@beattie-home.net>"]
 edition = "2018"
 readme = "README.md"
-name = "raw_mimo"
+name = "hello"
 version = "0.1.0"
 
 [dependencies]
@@ -28,7 +28,7 @@ panic-rtt-target = { version =  "0.1.2", features = ["cortex-m"] }
 
 # this lets you use `cargo fix`!
 [[bin]]
-name = "raw_mimo"
+name = "hello"
 test = false
 bench = false
 
